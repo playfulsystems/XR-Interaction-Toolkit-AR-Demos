@@ -20,13 +20,13 @@ public static class Vector2Extensions
 		List<RaycastResult> results = new List<RaycastResult>();
 		EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
 
-		int nonUIObjects = 0; // only count things not on the UI layer
-		for (int i=0; i<results.Count; i++)
+		int uiObjects = 0; // only count things not on the UI layer
+		for (int i = 0; i < results.Count; i++)
 		{
-			Debug.Log("hit ("+i+") " + results[0].gameObject.name);
-			if (results[0].gameObject.layer != 5) nonUIObjects++;
+			//Debug.Log("hit ("+i+") " + results[0].gameObject.name);
+			if (results[0].gameObject.layer == 5) uiObjects++; // 5 is the UI layer
 		}
 
-		return (nonUIObjects > 0);
+		return (uiObjects > 0);
 	}
 }
