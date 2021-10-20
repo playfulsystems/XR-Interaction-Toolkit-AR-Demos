@@ -35,8 +35,13 @@ public class ARShoot : MonoBehaviour
         Debug.Log("DRAG END" + obj.position);
         obj.onFinished -= OnDragComplete;
     }
+    public void ChangeProjectile(GameObject newPrefab)
+    {
+        projectile = newPrefab;
+    }
 
-	private void OnTapRecognized(TapGesture obj)
+
+    private void OnTapRecognized(TapGesture obj)
     {
         //Vector2 mousePos = (Vector2)Mouse.current.position;
         Vector2 mousePos = obj.startPosition;
