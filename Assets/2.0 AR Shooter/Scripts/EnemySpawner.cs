@@ -7,24 +7,24 @@ public class EnemySpawner : MonoBehaviour
     public GameObject prefabToSpawn;
     public float distFromCenter = 5f;
     public float spawnRate = 2f;
-    float nextSpawn;
+    float nextSpawnCountdown;
 
     void Start()
     {
-        nextSpawn = spawnRate;
+        nextSpawnCountdown = spawnRate;
     }
 
     void Update()
     {
-        if (nextSpawn < 0)
+        if (nextSpawnCountdown < 0)
         {
             Vector2 randomPositionOnCircle = Random.insideUnitCircle.normalized * distFromCenter;
             Vector3 spawnPosition = new Vector3(randomPositionOnCircle.x, 0f, randomPositionOnCircle.y);
 
             Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
-            nextSpawn = spawnRate;
+            nextSpawnCountdown = spawnRate;
         }
 
-        nextSpawn -= Time.deltaTime;
+        nextSpawnCountdown -= Time.deltaTime;
     }
 }
