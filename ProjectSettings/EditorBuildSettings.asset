@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/2.0 AR Shooter/Shooter.unity
+    guid: 51526dde64dad44fca9b67687fb450b0
+  - enabled: 1
+    path: Assets/4.0 Plane Detection Tanks/Tanks.unity
+    guid: 5476b87bd2266490bacc2cb82d85b831
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 7df1be74e4be042fa8daaae353365dea, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 84e2cae862534403eb4f19b059a71819, type: 2}

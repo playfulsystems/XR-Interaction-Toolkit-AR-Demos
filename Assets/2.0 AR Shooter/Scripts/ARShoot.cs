@@ -35,8 +35,10 @@ public class ARShoot : MonoBehaviour
         Debug.Log("DRAG END" + obj.position);
         obj.onFinished -= OnDragComplete;
     }
+
     public void ChangeProjectile(GameObject newPrefab)
     {
+        Debug.Log("ChangeProjectile");
         projectile = newPrefab;
     }
 
