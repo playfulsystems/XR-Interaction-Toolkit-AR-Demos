@@ -45,7 +45,6 @@ public class ARShoot : MonoBehaviour
 
     private void OnTapRecognized(TapGesture obj)
     {
-        //Vector2 mousePos = (Vector2)Mouse.current.position;
         Vector2 mousePos = obj.startPosition;
         if (!mousePos.IsPointOverUIObject())
         {
