@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/5.0 Image Detection/ImageDetection.unity
     guid: 076654d72398c4b058e0dbd6913082e7
-  - enabled: 0
+  - enabled: 1
     path: Assets/7.0 Simple Face Detection/SimpleFaceDetection.unity
     guid: ed7b6ae09109749598cebaf697075907
-  - enabled: 1
+  - enabled: 0
     path: Assets/6.0 MultiImage Detection/MultiImageDetection.unity
     guid: c788430ef0b404b4d81e73fa350af4ef
   m_configObjects:
