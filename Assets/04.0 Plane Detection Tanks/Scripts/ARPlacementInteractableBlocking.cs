@@ -12,6 +12,7 @@ public class ARPlacementInteractableBlocking : ARPlacementInteractable
             return false;
 		}
 
+        // allow for test planes
         if (gesture.targetObject == null || gesture.targetObject.layer == 9)
 		{
             return true;
