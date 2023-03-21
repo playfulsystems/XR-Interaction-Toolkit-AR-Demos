@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.XR.Interaction.Toolkit.AR;
 
 public class ARShoot : MonoBehaviour
@@ -45,8 +46,9 @@ public class ARShoot : MonoBehaviour
 
     private void OnTapRecognized(TapGesture obj)
     {
-        Vector2 mousePos = obj.startPosition;
-        if (!mousePos.IsPointOverUIObject())
+        // need this to avoid making a projectile when tapping a button
+        // note: need "using UnityEngine.EventSystems;"
+        if (!EventSystem.current.IsPointerOverGameObject())
         {
             GameObject newProjectile = Instantiate(projectile);
             newProjectile.transform.position = transform.position;

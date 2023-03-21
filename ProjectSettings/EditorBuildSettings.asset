@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/01.0 Setup/Setup.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
@@ -21,11 +21,11 @@ EditorBuildSettings:
     path: Assets/05.0 Image Detection/ImageDetection.unity
     guid: 076654d72398c4b058e0dbd6913082e7
   - enabled: 0
-    path: Assets/08.0 Simple Face Detection/SimpleFaceDetection.unity
-    guid: ed7b6ae09109749598cebaf697075907
-  - enabled: 0
     path: Assets/06.0 MultiImage Detection/MultiImageDetection.unity
     guid: c788430ef0b404b4d81e73fa350af4ef
+  - enabled: 0
+    path: Assets/08.0 Simple Face Detection/SimpleFaceDetection.unity
+    guid: ed7b6ae09109749598cebaf697075907
   - enabled: 0
     path: Assets/09.0 Faceball Game/FaceballGame.unity
     guid: 8c124c66f08184c41bdc76f4c7924774
