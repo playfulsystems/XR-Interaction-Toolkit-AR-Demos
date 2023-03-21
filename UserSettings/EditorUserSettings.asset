@@ -5,6 +5,33 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
+    RecentlyUsedSceneGuid-0:
+      value: 5306025050010d0c5f5d557a13775d40434f1d7a282a226674784e63bab2316f
+      flags: 0
+    RecentlyUsedSceneGuid-1:
+      value: 00060c5e5106595e0b5e0e7640775d44124f492f7b7b20317e7c4d32e4b4313e
+      flags: 0
+    RecentlyUsedSceneGuid-2:
+      value: 5b52055451565f0d0b5e547348775c4447151c297b7e20642e7e4461b6b7636c
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 57520d005d0c0d0c545b597246770e46404f402c792924692c7d4b35bbb23739
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 5600015453510d5e5b5a082314770b16151641287a7f70687a2f1f67b7b03668
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 5201550254060d5e5458587749770e414f164c78282d2269797f456bb3e4623b
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 56050350070d5e59095c5e744677064014161b297e2b24687f2d4566e0b86769
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 0655030453540c0b545f5c7b477706454f4f1b2f2e292066747e4d64b7b9646f
+      flags: 0
     RecentlyUsedScenePath-0:
       value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d
       flags: 0
@@ -30,6 +57,9 @@ EditorUserSettings:
       value: 2242470311464602435e4c0411205a5034180d242f2d66172c24187cc4e1373dc0e823e7e43f183d3407a1290a371526
       flags: 0
     RecentlyUsedScenePath-8:
+      value: 224247031146460b54405c6236225c15141614266c0f273d28663b32e1e53639eeeb11e8ea3f7129370bfb25
+      flags: 0
+    RecentlyUsedScenePath-9:
       value: 224247031146460a5d405c6236225c1556230a2b2f232f3e2a693532f6f37b1ee3e433ddf53b3c37300ce814052a1271e704001fef
       flags: 0
     vcSharedLogLevel:
@@ -40,9 +70,13 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
+  m_DesiredImportWorkerCount: 2
+  m_StandbyImportWorkerCount: 2
+  m_IdleImportWorkerShutdownDelay: 60000
   m_VCShowFailedCheckout: 1
   m_VCOverwriteFailedCheckoutAssets: 1
   m_VCProjectOverlayIcons: 1
   m_VCHierarchyOverlayIcons: 1
   m_VCOtherOverlayIcons: 1
   m_VCAllowAsyncUpdate: 1
+  m_ArtifactGarbageCollection: 1

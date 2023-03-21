@@ -29,9 +29,7 @@ public class OverlayManager : MonoBehaviour
         // increment overlay
         overlayNum = (overlayNum + 1) % overlays.Length;
 
-        // delete old trackable faces
-        Transform tracked = gameObject.transform.Find("Trackables");
-
+        // find all game objects with a ARFace component on it
         ARFace[] faces = GameObject.FindObjectsOfType<ARFace>();
         foreach(ARFace face in faces)
         {
