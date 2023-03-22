@@ -38,20 +38,22 @@ public class ShootOnDrag : MonoBehaviour
     {
         Debug.Log("DRAG START");
 
-        if (arSelectionInteractable.isSelected)
-		{
+        // uncomment if you only want dragging to work after selecting (tapping) a tank to be active
+        //if (arSelectionInteractable.isSelected)
+		//{
             startDragPos = obj.position;
             GetComponent<RotateScript>().isRotating = false;
             obj.onFinished += OnDragComplete;
-        }
+        //}
     }
 
     private void OnDragComplete(DragGesture obj)
     {
         Debug.Log("DRAG COMPLETE");
 
-        if (arSelectionInteractable.isSelected)
-        {
+        // uncomment if you only want dragging to work after selecting (tapping) a tank to be active
+        //if (arSelectionInteractable.isSelected)
+		//{
             GetComponent<RotateScript>().isRotating = true;
 
             Vector2 diffVector = obj.position - startDragPos;
@@ -61,7 +63,7 @@ public class ShootOnDrag : MonoBehaviour
             Vector3 bulletForce = transform.forward + new Vector3(0f, 1f, 0f);
             bulletForce *= (diffVector.magnitude * 0.01f);
             newBullet.GetComponent<Rigidbody>().AddForce(bulletForce, ForceMode.Impulse);
-        }
+        //}
     }
 
 }
