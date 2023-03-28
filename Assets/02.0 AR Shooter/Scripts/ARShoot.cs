@@ -46,9 +46,8 @@ public class ARShoot : MonoBehaviour
 
     private void OnTapRecognized(TapGesture obj)
     {
-        // need this to avoid making a projectile when tapping a button
-        // note: need "using UnityEngine.EventSystems;"
-        if (!EventSystem.current.IsPointerOverGameObject())
+        Vector2 mousePos = obj.startPosition;
+        if (!mousePos.IsPointOverUIObject())
         {
             GameObject newProjectile = Instantiate(projectile);
             newProjectile.transform.position = transform.position;
