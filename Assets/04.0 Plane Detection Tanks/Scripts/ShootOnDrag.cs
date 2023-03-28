@@ -56,12 +56,21 @@ public class ShootOnDrag : MonoBehaviour
 		//{
             GetComponent<RotateScript>().isRotating = true;
 
-            Vector2 diffVector = obj.position - startDragPos;
             GameObject newBullet = Instantiate(bulletPrefab);
             newBullet.transform.position = bulletStartPos.transform.position;
 
+            // determine difference between start and end drag position
+            // to use when calc force
+            Vector2 diffVector = obj.position - startDragPos;
+
+            // using a forward vector to shoot in direction tank is facing
+            // adding a bit of y so there is an arc
             Vector3 bulletForce = transform.forward + new Vector3(0f, 1f, 0f);
+
+            // multiplying vector by the distance of drag (scaled by a number that works)
             bulletForce *= (diffVector.magnitude * 0.01f);
+
+            // using calculated vector in AddForce
             newBullet.GetComponent<Rigidbody>().AddForce(bulletForce, ForceMode.Impulse);
         //}
     }
