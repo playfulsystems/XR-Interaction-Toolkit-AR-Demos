@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/10.0 Face Tracking Hats/FaceTrackingHats.unity
     guid: 4c9f89d795506416688f5ab9a46f92ca
+  - enabled: 1
+    path: Assets/11.0 Mesh Generation/MeshGeneration.unity
+    guid: c931e84ab7b954d5895a3398c2a39759
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 7df1be74e4be042fa8daaae353365dea, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 84e2cae862534403eb4f19b059a71819, type: 2}

@@ -40,7 +40,7 @@ public class ShootOnDrag : MonoBehaviour
 
         // uncomment if you only want dragging to work after selecting (tapping) a tank to be active
         //if (arSelectionInteractable.isSelected)
-		//{
+	    //{
             startDragPos = obj.position;
             GetComponent<RotateScript>().isRotating = false;
             obj.onFinished += OnDragComplete;
@@ -53,7 +53,7 @@ public class ShootOnDrag : MonoBehaviour
 
         // uncomment if you only want dragging to work after selecting (tapping) a tank to be active
         //if (arSelectionInteractable.isSelected)
-		//{
+	    //{
             GetComponent<RotateScript>().isRotating = true;
 
             GameObject newBullet = Instantiate(bulletPrefab);
