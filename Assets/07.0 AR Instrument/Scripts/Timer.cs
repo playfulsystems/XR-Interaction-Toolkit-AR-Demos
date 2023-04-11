@@ -12,18 +12,18 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-    counter = countdownEverySeconds;
-    beatNum = 0;
+        counter = countdownEverySeconds;
+        beatNum = 0;
     }
 
     void Update()
     {
-    if (counter < 0)
-    {
-        Beat(beatNum); // call the delegate
-        counter = countdownEverySeconds;
-        beatNum++;
-    }
-    counter -= Time.deltaTime;
+        if (counter < 0)
+        {
+            Beat(beatNum); // call the delegate
+            counter = countdownEverySeconds;
+            beatNum++;
+        }
+        counter -= Time.deltaTime;
     }
 }
