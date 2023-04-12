@@ -14,6 +14,7 @@ public class PlaceObject : MonoBehaviour
         arGestureInteractor = GetComponent<ARGestureInteractor>();
         arGestureInteractor.tapGestureRecognizer.onGestureStarted += OnTapRecognized;
     }
+
     private void OnTapRecognized(TapGesture obj)
     {
         Ray ray = arCamera.ScreenPointToRay(obj.startPosition);
@@ -22,13 +23,16 @@ public class PlaceObject : MonoBehaviour
         if (rayhit)
         {
             GameObject newObj = Instantiate(prefab);
-
             newObj.transform.position = hit.point;
-            newObj.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
-            newObj.transform.rotation = Quaternion.Euler(newObj.transform.rotation.x, arCamera.transform.rotation.eulerAngles.y, newObj.transform.rotation.z);
 
+            // rotate y to match direction of camera
+            newObj.transform.eulerAngles = new Vector3(newObj.transform.eulerAngles.x, arCamera.transform.rotation.eulerAngles.y, newObj.transform.eulerAngles.z);
+
+            // rotate to  match the rotation of the surface
+            newObj.transform.rotation = Quaternion.FromToRotation(newObj.transform.up, hit.normal) * newObj.transform.rotation;
+
+            // if your prefab has a rigidbody, give it a velocity... best for spheres
             newObj.GetComponent<Rigidbody>().velocity = newObj.transform.forward * 5f;
         }
     }
-
 }
