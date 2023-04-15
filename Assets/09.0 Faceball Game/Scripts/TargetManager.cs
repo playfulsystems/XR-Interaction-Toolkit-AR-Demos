@@ -4,22 +4,26 @@ using UnityEngine;
 
 public class TargetManager : MonoBehaviour
 {
-    public Target[] targets;
-
     void Start()
     {
-        Screen.sleepTimeout = SleepTimeout.NeverSleep;
         SelectNewTarget(null);
     }
 
     public void SelectNewTarget(Target hitTarget)
     {
-        Target randTarget = null;
-        while (hitTarget == randTarget || randTarget == null)
-        {
-            int randTargetNum = Random.Range(0, targets.Length);
-            randTarget = targets[randTargetNum];
-        }
-        randTarget.Toggle(true);
+        // finding all children w/Target script (ignores parent)
+        Target[] targets = GetComponentsInChildren<Target>();
+
+        // convert to a list so we can remove hitTarget
+        List<Target> targetList = new List<Target>(targets);
+
+        // remove hitTarget
+        if (hitTarget != null) targetList.Remove(hitTarget);
+
+        // get random target num
+        int randTargetNum = Random.Range(0, targetList.Count);
+
+        // turn it on
+        targetList[randTargetNum].Toggle(true);
     }
 }

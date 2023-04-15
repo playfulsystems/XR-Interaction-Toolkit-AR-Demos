@@ -6,14 +6,7 @@ public class Target : MonoBehaviour
 {
 	public Material ActiveMaterial;
 	public Material InActiveMaterial;
-	TargetManager mgr;
-	bool isOn;
-
-	void Start()
-	{
-		isOn = false;
-		mgr = transform.parent.GetComponent<TargetManager>();
-	}
+	bool isOn = false;
 
 	public void Toggle(bool newVal)
 	{
@@ -33,7 +26,7 @@ public class Target : MonoBehaviour
 	{
 		Toggle(false);
 		Destroy(other.gameObject);
-		mgr.SelectNewTarget(this);
+		GetComponentInParent<TargetManager>().SelectNewTarget(this);
 
 		GetComponent<AudioSource>().Play();
 	}

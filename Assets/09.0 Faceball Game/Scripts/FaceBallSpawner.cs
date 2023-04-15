@@ -22,11 +22,14 @@ public class FaceBallSpawner : MonoBehaviour
 
         if (spawnCountdown < 0)
         {
-            GameObject newPrefab = Instantiate(prefab, transform.position, transform.rotation);
-
-            newPrefab.GetComponent<FaceBall>().SetVelocityToTarget(transform.forward);
+            // creating and positioning a new ball
+            GameObject newBall = Instantiate(prefab);
+            newBall.transform.position = transform.position;
             spawnCountdown = spawnFreq;
-            Debug.Log("spawnCountdown: " + spawnCountdown);
+
+            // set velocity to the direction the camera is facing
+            Rigidbody rb = newBall.GetComponent<Rigidbody>();
+            rb.velocity = transform.forward * 0.5f;
         }
         spawnCountdown -= Time.deltaTime;
     }
