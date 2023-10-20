@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
         if (nextSpawnCountdown < 0)
         {
             Vector2 randomPositionOnCircle = Random.insideUnitCircle.normalized * distFromCenter;
-            Vector3 spawnPosition = new Vector3(randomPositionOnCircle.x, 0f, randomPositionOnCircle.y);
+            Vector3 spawnPosition = new Vector3(randomPositionOnCircle.x, transform.position.y, randomPositionOnCircle.y);
 
             Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
             nextSpawnCountdown = spawnRate;

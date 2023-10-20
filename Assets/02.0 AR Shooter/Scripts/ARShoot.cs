@@ -15,7 +15,6 @@ public class ARShoot : MonoBehaviour
     {
         arGestureInteractor = GetComponent<ARGestureInteractor>();
         arGestureInteractor.tapGestureRecognizer.onGestureStarted += OnTapRecognized;
-
         arGestureInteractor.dragGestureRecognizer.onGestureStarted += OnDragRecognized;
     }
 

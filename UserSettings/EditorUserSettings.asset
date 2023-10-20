@@ -5,35 +5,38 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
-    RecentlyUsedSceneGuid-0:
-      value: 0655030453540c0b545f5c7b477706454f4f1b2f2e292066747e4d64b7b9646f
+    HideARKitFaceTrackingDeprecatedWarning:
+      value: 17434103
       flags: 0
-    RecentlyUsedSceneGuid-1:
+    RecentlyUsedSceneGuid-0:
       value: 530807555d0150590e5b0f214477091613161a2c297c70672c2f1e31e7e66668
       flags: 0
-    RecentlyUsedSceneGuid-2:
+    RecentlyUsedSceneGuid-1:
       value: 56050350070d5e59095c5e744677064014161b297e2b24687f2d4566e0b86769
       flags: 0
-    RecentlyUsedSceneGuid-3:
-      value: 5600015453510d5e5b5a082314770b16151641287a7f70687a2f1f67b7b03668
-      flags: 0
-    RecentlyUsedSceneGuid-4:
+    RecentlyUsedSceneGuid-2:
       value: 00060c5e5106595e0b5e0e7640775d44124f492f7b7b20317e7c4d32e4b4313e
       flags: 0
-    RecentlyUsedSceneGuid-5:
+    RecentlyUsedSceneGuid-3:
       value: 5306025050010d0c5f5d557a13775d40434f1d7a282a226674784e63bab2316f
       flags: 0
-    RecentlyUsedSceneGuid-6:
+    RecentlyUsedSceneGuid-4:
       value: 00080757000d5d5a0f590e7b45775b454e4e4d2b7f7b7f682e7b1c60bbb76161
       flags: 0
-    RecentlyUsedSceneGuid-7:
-      value: 5201550254060d5e5458587749770e414f164c78282d2269797f456bb3e4623b
-      flags: 0
-    RecentlyUsedSceneGuid-8:
+    RecentlyUsedSceneGuid-5:
       value: 5a5255075d50580d0e5f0e7116775e47174f4c787d7076347a781b61e3e63669
       flags: 0
-    RecentlyUsedSceneGuid-9:
+    RecentlyUsedSceneGuid-6:
       value: 5b52055451565f0d0b5e547348775c4447151c297b7e20642e7e4461b6b7636c
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 5201550254060d5e5458587749770e414f164c78282d2269797f456bb3e4623b
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 5600015453510d5e5b5a082314770b16151641287a7f70687a2f1f67b7b03668
       flags: 0
     RecentlyUsedScenePath-0:
       value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d

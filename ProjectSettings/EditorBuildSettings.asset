@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/01.0 Setup/Setup.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/02.0 AR Shooter/Shooter.unity
     guid: 51526dde64dad44fca9b67687fb450b0
   - enabled: 0
@@ -41,4 +41,5 @@ EditorBuildSettings:
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 7df1be74e4be042fa8daaae353365dea, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 84e2cae862534403eb4f19b059a71819, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: a53bae9ace5df4c8e99d24f11ad4a8ad, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: dd34d6e2b1b8442f8bd984df4c868038, type: 2}
