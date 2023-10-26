@@ -9,12 +9,14 @@ public class ShootOnDrag : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public GameObject bulletStartPos;
+    public AudioClip shootClip;
     ARGestureInteractor arGestureInteractor;
     ARSelectionInteractable arSelectionInteractable;
     Vector2 startDragPos;
 
-    void OnEnabled()
+    void OnEnable()
     {
+        Debug.Log("TANK ENABLED");
         arGestureInteractor = Camera.main.GetComponent<ARGestureInteractor>();
         arGestureInteractor.dragGestureRecognizer.onGestureStarted += OnDragRecognized;
 
@@ -29,7 +31,7 @@ public class ShootOnDrag : MonoBehaviour
 	//{
 	//}
 
-	void OnDisabled()
+	void OnDisable()
     {
         arGestureInteractor.dragGestureRecognizer.onGestureStarted -= OnDragRecognized;
     }
@@ -72,6 +74,9 @@ public class ShootOnDrag : MonoBehaviour
 
             // using calculated vector in AddForce
             newBullet.GetComponent<Rigidbody>().AddForce(bulletForce, ForceMode.Impulse);
+
+            // play sound
+            GetComponent<AudioSource>().PlayOneShot(shootClip);
         //}
     }
 

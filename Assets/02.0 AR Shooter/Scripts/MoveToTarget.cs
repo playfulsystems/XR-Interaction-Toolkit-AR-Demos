@@ -13,7 +13,8 @@ public class MoveToTarget : MonoBehaviour
 
         if (Vector3.Distance(TargetPos, transform.position) < Speed * Time.deltaTime)
         {
-            transform.position = TargetPos;
+            // if hit target
+            Destroy(gameObject);
         }
         else
         {
