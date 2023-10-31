@@ -6,11 +6,12 @@ using UnityEngine.XR.Interaction.Toolkit.AR;
 public class PlaceObject : MonoBehaviour
 {
     public GameObject prefab;
-    public Camera arCamera;
+    Camera arCamera;
     ARGestureInteractor arGestureInteractor;
 
     void OnEnable()
     {
+        arCamera = GetComponent<Camera>();
         arGestureInteractor = GetComponent<ARGestureInteractor>();
         arGestureInteractor.tapGestureRecognizer.onGestureStarted += OnTapRecognized;
     }
