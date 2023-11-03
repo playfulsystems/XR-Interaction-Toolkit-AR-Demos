@@ -7,6 +7,7 @@ public class PlaceObject : MonoBehaviour
 {
     public GameObject prefab;
     Camera arCamera;
+
     ARGestureInteractor arGestureInteractor;
 
     void OnEnable()
