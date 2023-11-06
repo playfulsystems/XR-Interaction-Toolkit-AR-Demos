@@ -41,12 +41,12 @@ public class ShootOnDrag : MonoBehaviour
         Debug.Log("DRAG START");
 
         // uncomment if you only want dragging to work after selecting (tapping) a tank to be active
-        //if (arSelectionInteractable.isSelected)
-	    //{
+        if (arSelectionInteractable.isSelected)
+	    {
             startDragPos = obj.position;
             GetComponent<RotateScript>().isRotating = false;
             obj.onFinished += OnDragComplete;
-        //}
+        }
     }
 
     private void OnDragComplete(DragGesture obj)
@@ -55,7 +55,7 @@ public class ShootOnDrag : MonoBehaviour
 
         // uncomment if you only want dragging to work after selecting (tapping) a tank to be active
         //if (arSelectionInteractable.isSelected)
-	    //{
+	    {
             GetComponent<RotateScript>().isRotating = true;
 
             GameObject newBullet = Instantiate(bulletPrefab);
@@ -77,7 +77,7 @@ public class ShootOnDrag : MonoBehaviour
 
             // play sound
             GetComponent<AudioSource>().PlayOneShot(shootClip);
-        //}
+        }
     }
 
 }

@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56667
+60224
 Successfully changed project path to: /Users/jonahwarren/Documents/Unity/GDD/314/AR/2021/XR-Interaction-Toolkit-AR-Demos
 /Users/jonahwarren/Documents/Unity/GDD/314/AR/2021/XR-Interaction-Toolkit-AR-Demos
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -56,11 +56,11 @@ Successfully changed project path to: /Users/jonahwarren/Documents/Unity/GDD/314
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8422400128] Host "[IP] 10.111.128.114 [Port] 0 [Flags] 2 [Guid] 3989468978 [EditorId] 3989468978 [Version] 1048832 [Id] OSXEditor(0,MBP-JP99QR4Y04) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8422400128] Host "[IP] 10.111.128.114 [Port] 0 [Flags] 2 [Guid] 3898620195 [EditorId] 3898620195 [Version] 1048832 [Id] OSXEditor(0,MBP-JP99QR4Y04) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8422400128] Host "[IP] 10.111.128.114 [Port] 0 [Flags] 2 [Guid] 3989468978 [EditorId] 3989468978 [Version] 1048832 [Id] OSXEditor(0,MBP-JP99QR4Y04) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8422400128] Host "[IP] 10.111.128.114 [Port] 0 [Flags] 2 [Guid] 3898620195 [EditorId] 3898620195 [Version] 1048832 [Id] OSXEditor(0,MBP-JP99QR4Y04) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 6.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 14.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.7f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -75,28 +75,27 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.7f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.7f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.7f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56460
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56962
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.7f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.7f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.7f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.7f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.001383 seconds.
-- Loaded All Assemblies, in  0.181 seconds
+Registered in 0.004681 seconds.
+- Loaded All Assemblies, in  0.221 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
-[usbmuxd] Attached: 32 00008120-0016645A1428C01E
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 47 ms
+Android Extension - Scanning For ADB Devices 48 ms
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.250 seconds
-Domain Reload Profiling: 432ms
-	BeginReloadAssembly (39ms)
+- Finished resetting the current domain, in  0.271 seconds
+Domain Reload Profiling: 492ms
+	BeginReloadAssembly (66ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -104,26 +103,26 @@ Domain Reload Profiling: 432ms
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (28ms)
-	LoadAllAssembliesAndSetupDomain (85ms)
-		LoadAssemblies (39ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (95ms)
+		LoadAssemblies (68ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (84ms)
-			TypeCache.Refresh (83ms)
-				TypeCache.ScanAssembly (75ms)
+		AnalyzeDomain (92ms)
+			TypeCache.Refresh (91ms)
+				TypeCache.ScanAssembly (82ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (250ms)
+	FinalizeReload (271ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (218ms)
+		SetupLoadedEditorAssemblies (236ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (153ms)
+			InitializePlatformSupportModulesInManaged (160ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (43ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
+			ProcessInitializeOnLoadAttributes (49ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -131,8 +130,8 @@ Domain Reload Profiling: 432ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.332 seconds
-Refreshing native plugins compatible for Editor in 5.15 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.345 seconds
+Refreshing native plugins compatible for Editor in 4.31 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
@@ -148,86 +147,49 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.329 seconds
-Domain Reload Profiling: 662ms
-	BeginReloadAssembly (86ms)
+- Finished resetting the current domain, in  0.386 seconds
+Domain Reload Profiling: 731ms
+	BeginReloadAssembly (77ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (19ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (18ms)
-	LoadAllAssembliesAndSetupDomain (202ms)
-		LoadAssemblies (154ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (218ms)
+		LoadAssemblies (173ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (80ms)
-			TypeCache.Refresh (67ms)
-				TypeCache.ScanAssembly (57ms)
+		AnalyzeDomain (83ms)
+			TypeCache.Refresh (70ms)
+				TypeCache.ScanAssembly (59ms)
 			ScanForSourceGeneratedMonoScriptInfo (8ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (329ms)
+	FinalizeReload (386ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (226ms)
+		SetupLoadedEditorAssemblies (281ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (34ms)
-			ProcessInitializeOnLoadAttributes (150ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
+			ProcessInitializeOnLoadAttributes (195ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.7f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
-Refreshing native plugins compatible for Editor in 8.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 177 unused Assets / (1.4 MB). Loaded Objects now: 3632.
-Memory consumption went from 137.7 MB to 136.3 MB.
-Total: 3.003250 ms (FindLiveObjects: 0.103000 ms CreateObjectMapping: 0.052334 ms MarkObjects: 2.378750 ms  DeleteObjects: 0.468750 ms)
+Unloading 177 unused Assets / (1.5 MB). Loaded Objects now: 3632.
+Memory consumption went from 134.9 MB to 133.4 MB.
+Total: 3.174833 ms (FindLiveObjects: 0.127834 ms CreateObjectMapping: 0.054000 ms MarkObjects: 2.480791 ms  DeleteObjects: 0.511750 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Import Request.
-  Time since last request: 571698.637548 seconds.
-  path: Assets/05.0 Image Detection/Images
-  artifactKey: Guid(2913fc7b72a0244e499375fafed52adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/05.0 Image Detection/Images using Guid(2913fc7b72a0244e499375fafed52adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46abf82cd1e9abda72a5c50770939aa') in 0.000999 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.279420 seconds.
-  path: Assets/05.0 Image Detection/ReferenceImageLibrary.asset
-  artifactKey: Guid(b49b85ba263da4a55abb317323ed2851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/05.0 Image Detection/ReferenceImageLibrary.asset using Guid(b49b85ba263da4a55abb317323ed2851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e68a70a8987d7aa766ad9f10b1fa046e') in 0.023848 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 17.28 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (1.4 MB). Loaded Objects now: 3633.
-Memory consumption went from 78.8 MB to 77.4 MB.
-Total: 4.992709 ms (FindLiveObjects: 0.196208 ms CreateObjectMapping: 0.047334 ms MarkObjects: 4.279083 ms  DeleteObjects: 0.469542 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
@@ -237,127 +199,25 @@ AssetImportParameters requested are different than current active one (requested
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 29.633479 seconds.
-  path: Assets/06.0 MultiImage Detection/Scripts/MulitImageTracking.cs
-  artifactKey: Guid(3414b483dba594ec8a7ff7960bc55fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/06.0 MultiImage Detection/Scripts/MulitImageTracking.cs using Guid(3414b483dba594ec8a7ff7960bc55fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505019488c332b1b12e5b967c7b4ea10') in 0.000592 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.327120 seconds.
-  path: Assets/06.0 MultiImage Detection/MultiReferenceImageLibrary.asset
-  artifactKey: Guid(b56856309bbc9420a9ddc260158f3cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/06.0 MultiImage Detection/MultiReferenceImageLibrary.asset using Guid(b56856309bbc9420a9ddc260158f3cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a037ad38e47aef9dba51e59de9e3c9fe') in 0.025882 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.000884 seconds.
+  Time since last request: 703771.642056 seconds.
   path: Assets/05.0 Image Detection/Images/marker-00.png
   artifactKey: Guid(e80cbe7b037e24fd19c010ded71c1559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/05.0 Image Detection/Images/marker-00.png using Guid(e80cbe7b037e24fd19c010ded71c1559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4fbc27ebe58c76b2e482079d1e5c10') in 0.063007 seconds
+Start importing Assets/05.0 Image Detection/Images/marker-00.png using Guid(e80cbe7b037e24fd19c010ded71c1559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58204274c040fe0c1f9f92841eb61a1e') in 0.194926 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
-Received Import Request.
-  Time since last request: 338.272563 seconds.
-  path: Assets/05.0 Image Detection/ImageDetection.unity
-  artifactKey: Guid(076654d72398c4b058e0dbd6913082e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/05.0 Image Detection/ImageDetection.unity using Guid(076654d72398c4b058e0dbd6913082e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ed3ad094b34d55d41a60f66de41bc62') in 0.003784 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 77.148980 seconds.
-  path: Assets/05.0 Image Detection/Prefabs
-  artifactKey: Guid(e218f52a2aa86493780f4a01f0f8752d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/05.0 Image Detection/Prefabs using Guid(e218f52a2aa86493780f4a01f0f8752d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c4dd71ec7e12b68886ee5a8687b4aaf') in 0.000403 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 7.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.63 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (1.3 MB). Loaded Objects now: 3635.
-Memory consumption went from 78.4 MB to 77.1 MB.
-Total: 9.760584 ms (FindLiveObjects: 0.203958 ms CreateObjectMapping: 0.047541 ms MarkObjects: 9.096167 ms  DeleteObjects: 0.412584 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 10.33 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (1.3 MB). Loaded Objects now: 3635.
-Memory consumption went from 78.3 MB to 76.9 MB.
-Total: 9.283333 ms (FindLiveObjects: 0.214708 ms CreateObjectMapping: 0.047000 ms MarkObjects: 8.495834 ms  DeleteObjects: 0.525167 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 7.42 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 9 unused Assets / (1.4 MB). Loaded Objects now: 3635.
-Memory consumption went from 77.9 MB to 76.5 MB.
-Total: 8.162583 ms (FindLiveObjects: 0.202500 ms CreateObjectMapping: 0.051667 ms MarkObjects: 7.387166 ms  DeleteObjects: 0.520583 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 7.89 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (1.4 MB). Loaded Objects now: 3635.
-Memory consumption went from 77.5 MB to 76.2 MB.
-Total: 8.275208 ms (FindLiveObjects: 0.210958 ms CreateObjectMapping: 0.052042 ms MarkObjects: 7.502417 ms  DeleteObjects: 0.509250 ms)
+Memory consumption went from 76.6 MB to 75.2 MB.
+Total: 3.174375 ms (FindLiveObjects: 0.084959 ms CreateObjectMapping: 0.038000 ms MarkObjects: 2.699541 ms  DeleteObjects: 0.351708 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -375,140 +235,17 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 687.746918 seconds.
+  Time since last request: 1630.390850 seconds.
   path: Assets/06.0 MultiImage Detection/MultiImageDetection.unity
   artifactKey: Guid(c788430ef0b404b4d81e73fa350af4ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/06.0 MultiImage Detection/MultiImageDetection.unity using Guid(c788430ef0b404b4d81e73fa350af4ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e766887756161d1567731671d3f387e') in 0.001116 seconds
+Start importing Assets/06.0 MultiImage Detection/MultiImageDetection.unity using Guid(c788430ef0b404b4d81e73fa350af4ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '849432b80a0da1fb90a77e1226ebd019') in 0.002524 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 41.255556 seconds.
-  path: Assets/06.0 MultiImage Detection/Prefabs
-  artifactKey: Guid(5b511cfdba42d4c7e8f2a15c4141135e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/06.0 MultiImage Detection/Prefabs using Guid(5b511cfdba42d4c7e8f2a15c4141135e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cc72c3fa36c87116cec7285cfa49b0b') in 0.000326 seconds
+  Time since last request: 100.919928 seconds.
+  path: Assets/05.0 Image Detection/Images/marker-02.png
+  artifactKey: Guid(dafa092ef296240aea4c8c3dddea2e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/05.0 Image Detection/Images/marker-02.png using Guid(dafa092ef296240aea4c8c3dddea2e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70145502f0272cadadd8887e373464df') in 0.033720 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 9.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (1.3 MB). Loaded Objects now: 3635.
-Memory consumption went from 76.8 MB to 75.5 MB.
-Total: 13.947500 ms (FindLiveObjects: 0.211958 ms CreateObjectMapping: 0.045250 ms MarkObjects: 13.093000 ms  DeleteObjects: 0.597000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 9.17 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (1.4 MB). Loaded Objects now: 3635.
-Memory consumption went from 76.7 MB to 75.3 MB.
-Total: 13.541875 ms (FindLiveObjects: 0.215250 ms CreateObjectMapping: 0.045458 ms MarkObjects: 12.806250 ms  DeleteObjects: 0.474666 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 10.71 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (1.3 MB). Loaded Objects now: 3635.
-Memory consumption went from 76.3 MB to 74.9 MB.
-Total: 20.968250 ms (FindLiveObjects: 0.217834 ms CreateObjectMapping: 0.041958 ms MarkObjects: 19.718583 ms  DeleteObjects: 0.988875 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 10.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (1.4 MB). Loaded Objects now: 3635.
-Memory consumption went from 75.9 MB to 74.5 MB.
-Total: 8.746625 ms (FindLiveObjects: 0.205542 ms CreateObjectMapping: 0.046458 ms MarkObjects: 8.021583 ms  DeleteObjects: 0.472708 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 10.22 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (1.3 MB). Loaded Objects now: 3635.
-Memory consumption went from 75.5 MB to 74.2 MB.
-Total: 3.239625 ms (FindLiveObjects: 0.111833 ms CreateObjectMapping: 0.051083 ms MarkObjects: 2.618959 ms  DeleteObjects: 0.457375 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1070.608208 seconds.
-  path: Assets/06.0 MultiImage Detection/MultiImageDetection.unity
-  artifactKey: Guid(c788430ef0b404b4d81e73fa350af4ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/06.0 MultiImage Detection/MultiImageDetection.unity using Guid(c788430ef0b404b4d81e73fa350af4ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc429ca5c48646db1f68044c811e432e') in 0.001599 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 2

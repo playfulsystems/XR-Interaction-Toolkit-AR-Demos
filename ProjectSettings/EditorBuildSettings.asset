@@ -29,7 +29,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/08.0 Simple Face Detection/SimpleFaceDetection.unity
     guid: ed7b6ae09109749598cebaf697075907
-  - enabled: 1
+  - enabled: 0
     path: Assets/09.0 Faceball Game/FaceballGame.unity
     guid: 8c124c66f08184c41bdc76f4c7924774
   - enabled: 0

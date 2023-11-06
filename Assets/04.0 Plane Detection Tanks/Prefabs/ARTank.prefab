@@ -620,7 +620,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2911477721764985897, guid: f5f497dcc27914ad6924f4f52062c96d, type: 3}
   bulletStartPos: {fileID: 1530181295486595131}
-  stopClip: {fileID: 8300000, guid: 7dba04511af3f4e58a6e759728f46075, type: 3}
   shootClip: {fileID: 8300000, guid: 385c7241395d94ef9b0f8ab8d71b2e94, type: 3}
 --- !u!82 &-1358136276167510657
 AudioSource:
