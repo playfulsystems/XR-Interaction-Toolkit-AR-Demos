@@ -10,6 +10,7 @@ public class ShootOnDrag : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject bulletStartPos;
     public AudioClip shootClip;
+    
     ARGestureInteractor arGestureInteractor;
     ARSelectionInteractable arSelectionInteractable;
     Vector2 startDragPos;
